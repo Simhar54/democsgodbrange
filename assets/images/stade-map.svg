@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Plan du stade municipal de Hussigny-Godbrange</title>
+  <desc id="desc">Plan stylisé indiquant le stade municipal rue Jean Moulin.</desc>
+  <rect width="640" height="420" fill="#e9ece8"/>
+  <path d="M0 92L160 122 300 90 455 123 640 82V0H0Z" fill="#d8e4d3"/>
+  <path d="M0 330L140 292 278 335 430 286 640 320V420H0Z" fill="#d5e2d1"/>
+  <path d="M-20 225C105 170 180 260 290 215S480 150 670 205" fill="none" stroke="#fff" stroke-width="42"/>
+  <path d="M-20 225C105 170 180 260 290 215S480 150 670 205" fill="none" stroke="#c7cac8" stroke-width="3"/>
+  <path d="M164 -15C205 85 181 151 223 238S312 340 286 440" fill="none" stroke="#fff" stroke-width="30"/>
+  <path d="M164 -15C205 85 181 151 223 238S312 340 286 440" fill="none" stroke="#c7cac8" stroke-width="2"/>
+  <path d="M471 -10C445 100 510 168 472 260S431 356 465 435" fill="none" stroke="#fff" stroke-width="25"/>
+  <rect x="360" y="255" width="152" height="82" rx="5" fill="#9fc78f" stroke="#fff" stroke-width="7" transform="rotate(-8 436 296)"/>
+  <path d="M330 172c0-33 27-60 60-60s60 27 60 60c0 46-60 104-60 104s-60-58-60-104Z" fill="#ba0025"/>
+  <circle cx="390" cy="172" r="23" fill="#fff"/>
+  <circle cx="390" cy="172" r="9" fill="#ba0025"/>
+  <rect x="28" y="28" width="250" height="70" rx="4" fill="#17191b"/>
+  <text x="50" y="58" fill="#fff" font-family="Arial, sans-serif" font-size="14" font-weight="700">STADE MUNICIPAL</text>
+  <text x="50" y="82" fill="#c9c9c9" font-family="Arial, sans-serif" font-size="12">Rue Jean Moulin · Hussigny-Godbrange</text>
+  <text x="330" y="390" fill="#777" font-family="Arial, sans-serif" font-size="11">PLAN D’ACCÈS — SITE DE DÉMONSTRATION</text>
+</svg>

@@ -1,0 +1,20 @@
+<?php
+$title='CS Godbrange — Nos équipes';
+include 'partials/header.php';
+$groups=[
+    'competition'=>['title'=>'Seniors & Vétérans','subtitle'=>'Pôle compétition','icon'=>'⚽','teams'=>[
+        ['ÉQUIPE FANION','PÔLE COMPÉTITION','g2_18d2e.png','Seniors A','Départemental 2 (D2)','David B. • Jeudi 19h30'],
+        ['+45 ANS','EXPÉRIENCE & CONVIVIALITÉ','g2_8caa5.png','Vétérans','Critérium Vétérans','Dimanche 10h00']]],
+    'formation'=>['title'=>'Formation','subtitle'=>'U13 – U18','icon'=>'◆','teams'=>[
+        ['PÔLE PRÉFORMATION','JEUNES U15','g2_66e86.png','U15','Départemental 4','Mercredi 17h30'],
+        ['PÔLE FORMATION','GRAND TERRAIN U18','g1_74aa3.png','U18','District U18 - Niveau 1','Mercredi 18h30']]],
+    'ecole'=>['title'=>'École de Foot','subtitle'=>'U7 – U11','icon'=>'◇','teams'=>[
+        ['ÉCOLE DE FOOT','INITIATION','g2_18d2e.png','U9 / U11','Critérium','Samedi matin']]]
+];
+$teamIndex=0;
+?>
+<section class="section teams-head"><span class="eyebrow">SAISON 2024–2025 / PÔLE SPORTIF</span><h1>NOS ÉQUIPES & PÔLES SPORTIFS</h1><p>De l’école de football jusqu’aux seniors et vétérans, découvrez l’ensemble de nos effectifs.</p><nav class="team-tabs category-nav" aria-label="Accéder aux catégories d’équipes"><?php foreach($groups as $slug=>$group): ?><a href="#<?=$slug?>"><span><?=$group['icon']?></span><?=$group['title']?><small><?=$group['subtitle']?></small></a><?php endforeach; ?></nav></section>
+<section class="section team-list"><?php foreach($groups as $slug=>$group): ?><section class="team-category" id="<?=$slug?>"><header class="team-category-heading"><span><?=$group['icon']?></span><div><small><?=$group['subtitle']?></small><h2><?=$group['title']?></h2></div></header><?php foreach($group['teams'] as $t): $matchId='team-match-'.$teamIndex; ?><article class="team-row"><div class="team-info-card"><div class="team-photo"><span><?=$t[0]?><small><?=$t[1]?></small></span><img src="assets/images/<?=$t[2]?>" alt="<?=$t[3]?>"></div><div class="team-meta"><p><span>CHAMPIONNAT</span><b><?=$t[4]?></b></p><p><span>ENTRAÎNEMENTS</span><b><?=$t[5]?></b></p><a class="btn" href="<?=$teamIndex===0?'equipe-seniors.php':'#'?>">VOIR LE DÉTAIL DE L’ÉQUIPE & L’EFFECTIF →</a></div></div><div class="mini-match match-widget"><div class="mini-match-tabs" role="tablist" aria-label="Matchs de <?=$t[3]?>"><button class="active" type="button" role="tab" aria-selected="true" data-match-tab="<?=$matchId?>-last">DERNIER</button><button type="button" role="tab" aria-selected="false" data-match-tab="<?=$matchId?>-next">PROCHAIN</button></div><div class="mini-match-panel" id="<?=$matchId?>-last" role="tabpanel"><div class="mini-match-label">Dernier match</div><time>22 septembre · 15:00</time><div class="mini-score"><span class="mini-club"><img src="assets/images/g0_3496c.png" alt="CS Godbrange"><b>CSG</b></span><strong>3 <i>1</i></strong><span class="mini-club"><span class="mini-crest">VM</span><b>Villers</b></span></div><small>Départemental 2 · Poule A</small></div><div class="mini-match-panel" id="<?=$matchId?>-next" role="tabpanel" hidden><div class="mini-match-label">Prochain match</div><time>29 septembre · 15:00</time><div class="mini-score"><span class="mini-club"><img src="assets/images/g0_3496c.png" alt="CS Godbrange"><b>CSG</b></span><strong class="mini-vs">VS</strong><span class="mini-club"><span class="mini-crest">US</span><b>US Réhon</b></span></div><small>Départemental 2 · Poule A</small></div></div></article><?php $teamIndex++; endforeach; ?></section><?php endforeach; ?></section>
+<a class="back-to-top" href="#" aria-label="Revenir en haut de la page" title="Revenir en haut">↑</a>
+<section class="section recruitment"><div class="recruitment-content"><h3>REJOINDRE UN EFFECTIF / SAISON EN COURS</h3><p>INSCRIPTIONS ET LICENCES : RENSEIGNEZ-VOUS DÈS MAINTENANT.</p><a class="btn" href="contact.php">CONTACTER LE SECRÉTARIAT</a></div><img class="recruitment-logo" src="assets/images/g0_db8f1.png" alt="Logo du CS Godbrange"></section>
+<?php include 'partials/footer.php'; ?>
